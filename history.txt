@@ -1,0 +1,52 @@
+4/11
+    sudo apt install mysql-server
+  	
+  	sudo mysql -u root -p
+  	
+  	https://www.youtube.com/watch?v=VIDsBysduuY
+  	CREATE USER 'jiayu'@'localhost' IDENTIFIED BY 'jiayu';
+  	GRANT ALL PRIVILEGES ON *.* TO 'jiayu'@'localhost';
+
+    docker build -t gin-gorm-redis-api .
+
+    sudo docker run -p 5000:5000 gin-gorm-redis-api
+
+    sudo apt install docker-compose
+    sudo docker-compose up
+
+    docker-compose up
+
+    docker-compose up -d
+
+    sudo usermod -aG docker jiayu
+
+    sudo docker-compose -p
+    sudo docker-compose ps
+
+    https://www.thegeekstuff.com/2016/04/docker-compose-up-stop-rm/
+    sudo docker-compose stop
+
+    sudo docker-compose rm -f
+
+    mysql --host=0.0.0.0 --port=6033 --user=jiayu --password=jiayu
+
+    redis-cli -h 0.0.0.0 -p 9736
+
+    sudo docker-compose rm -f
+    sudo docker build -t gin-gorm-redis-api .
+    sudo docker-compose up
+
+
+    docker rm app 
+
+    https://www.youtube.com/watch?v=BNejtAufH80
+    sudo docker exec -it gingormredisapi_api_1 /bin/bash
+    sudo cat /etc/hosts
+
+    sudo docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gingormredisapi_api_1
+
+    172.18.0.4:8000/users
+
+    docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+
+    
