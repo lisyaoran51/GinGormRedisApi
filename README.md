@@ -19,7 +19,11 @@
     sudo docker exec -it gingormredisapi_api_1 /bin/bash
     sudo cat /etc/hosts
 ```
-    port:8000
+* port
+
+PORT:8000
+
+### API
 
 * `POST`    **/users**    = route for register new user
 * `GET`     **/users**    = get data of users
